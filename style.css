@@ -1,15 +1,22 @@
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 0;
+    padding: 0;
+    margin:0
+}
+
+p{
+    padding:5px;
 }
 
 header{
     color:white;
-    position:fixed;
+    z-index:-1;
+    position:absolute;
     top: 0;
     width:100%;
     background-color: rgb(26, 37, 37);
-    max-height: 55px;
+    max-height: 120px;
 }
 
 
@@ -18,31 +25,36 @@ h1{
     color:black;
     text-align: center;
     font-size: 50px;
+    font-style:oblique;
 
     ;
 }
 
 main{
-    margin-top: 40px;
+    margin-top: 100px;
     position:absolute;
     background-color: rgb(89, 128, 146);
-    max-width: 68.5%;
+    max-width: 85%;
+    height:100%
+}
+
+main p{
+    font-size: 18px;
 }
 
 .MainHeading{
+    font-size:30px;
     color: rgb(255, 255, 255);
     text-align:center;
+    font-style:oblique;
 }
-
-footer{
-    
-}
-
 
 aside{
-    margin-top: 40px;
-    max-width: 30%;
-    float: right;
+    margin-top: 100px;
+    height:100%;
+    max-width: 15%;
+    position: absolute;
+    right:0;
     background-color: rgb(42, 59, 59);
     color:white;
     text-align:right;
@@ -61,5 +73,16 @@ nav li{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:10%;
+    width:30%;
+}
+
+#SideImage{
+    width:90%;
+}
+
+footer{
+    position:absolute;
+    bottom:-0;
+    background-color: rgb(26, 37, 37);
+    width: 100%;;
 }
